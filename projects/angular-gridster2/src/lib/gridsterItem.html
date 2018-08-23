@@ -1,15 +1,17 @@
+{{ noHorizontalResize }} {{ noVerticalResize }}
+
 <ng-content></ng-content>
 <div (mousedown)="resize.dragStartDelay($event)" (touchstart)="resize.dragStartDelay($event)"
-     [hidden]="!gridster.$options.resizable.handles.s || !resize.resizeEnabled"
+     [hidden]="!gridster.$options.resizable.handles.s || !resize.resizeEnabled || noVerticalResize"
      class="gridster-item-resizable-handler handle-s"></div>
 <div (mousedown)="resize.dragStartDelay($event)" (touchstart)="resize.dragStartDelay($event)"
-     [hidden]="!gridster.$options.resizable.handles.e || !resize.resizeEnabled"
+     [hidden]="!gridster.$options.resizable.handles.e || !resize.resizeEnabled || noHorizontalResize"
      class="gridster-item-resizable-handler handle-e"></div>
 <div (mousedown)="resize.dragStartDelay($event)" (touchstart)="resize.dragStartDelay($event)"
-     [hidden]="!gridster.$options.resizable.handles.n || !resize.resizeEnabled"
+     [hidden]="!gridster.$options.resizable.handles.n || !resize.resizeEnabled || noVerticalResize"
      class="gridster-item-resizable-handler handle-n"></div>
 <div (mousedown)="resize.dragStartDelay($event)" (touchstart)="resize.dragStartDelay($event)"
-     [hidden]="!gridster.$options.resizable.handles.w || !resize.resizeEnabled"
+     [hidden]="!gridster.$options.resizable.handles.w || !resize.resizeEnabled || noHorizontalResize"
      class="gridster-item-resizable-handler handle-w"></div>
 <div (mousedown)="resize.dragStartDelay($event)" (touchstart)="resize.dragStartDelay($event)"
      [hidden]="!gridster.$options.resizable.handles.se || !resize.resizeEnabled"

@@ -27,6 +27,9 @@ export class GridsterItemComponent implements OnInit, OnDestroy, GridsterItemCom
   notPlaced: boolean;
   init: boolean;
 
+  noVerticalResize: boolean;
+  noHorizontalResize: boolean;
+
   constructor(el: ElementRef, @Host() gridster: GridsterComponent, public renderer: Renderer2, private zone: NgZone) {
     this.el = el.nativeElement;
     this.$item = {
@@ -61,6 +64,14 @@ export class GridsterItemComponent implements OnInit, OnDestroy, GridsterItemCom
       maxItemArea: undefined,
       minItemArea: undefined,
     });
+
+    if (this.$item.minItemRows && this.$item.maxItemRows) {
+      this.noVerticalResize = this.$item.minItemRows === this.$item.maxItemRows;
+    }
+
+    if (this.$item.minItemCols && this.$item.maxItemCols) {
+      this.noHorizontalResize = this.$item.minItemCols === this.$item.maxItemCols;
+    }
   }
 
   ngOnDestroy(): void {
