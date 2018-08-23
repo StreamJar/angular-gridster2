@@ -1,5 +1,3 @@
-{{ noHorizontalResize }} {{ noVerticalResize }}
-
 <ng-content></ng-content>
 <div (mousedown)="resize.dragStartDelay($event)" (touchstart)="resize.dragStartDelay($event)"
      [hidden]="!gridster.$options.resizable.handles.s || !resize.resizeEnabled || noVerticalResize"
