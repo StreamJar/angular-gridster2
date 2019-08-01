@@ -130,8 +130,12 @@ Option 2 (with text selection):
 @matpag (Mattia Pagini)
 
 ### [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.me/tiberiuzuld)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStreamJar%2Fangular-gridster2.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2FStreamJar%2Fangular-gridster2?ref=badge_shield)
 
 ### License
  The MIT License
  
  Copyright (c) 2018 Tiberiu Zuld
+
+
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2FStreamJar%2Fangular-gridster2.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2FStreamJar%2Fangular-gridster2?ref=badge_large)
